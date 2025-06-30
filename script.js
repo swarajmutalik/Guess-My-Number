@@ -42,3 +42,12 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   }
 });
+
+document.querySelector(".again").addEventListener("click", function () {
+  document.querySelector("body").style.background = "#222";
+  document.querySelector(".number").style.width = "15rem";
+  document.querySelector(".message").textContent = "Start guessing...";
+  document.querySelector(".number").textContent = "?";
+  document.querySelector(".score").textContent = 20;
+  document.querySelector(".guess").value = "";
+});
